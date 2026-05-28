@@ -8,7 +8,7 @@ def get_weather(request):
     if request.method == 'GET':
         city = request.GET.get('city', 'London')
         api_key = '60bb9f24db6c8d581aa11b9d9c7f80c3'
-        url = f'https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=metric&cnt=5'
+        url = f'https://api.openweathermap.porg/data/2.5/forecast?q={city}&appid={api_key}&units=metric&cnt=5'
         
         try:
             response = requests.get(url)
